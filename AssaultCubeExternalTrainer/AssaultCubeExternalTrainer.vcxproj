@@ -136,6 +136,7 @@
   <ItemGroup>
     <ClInclude Include="header.h" />
     <ClInclude Include="MemManager.h" />
+    <ClInclude Include="Offset.h" />
     <ClInclude Include="Player.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

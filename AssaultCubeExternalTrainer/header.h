@@ -5,3 +5,4 @@
 #include <vector>
 #include "MemManager.h"
 #include "Player.h"
+#include "Offset.h"
