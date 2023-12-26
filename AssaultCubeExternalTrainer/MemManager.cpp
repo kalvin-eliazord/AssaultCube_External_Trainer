@@ -58,10 +58,10 @@ uintptr_t MemManager::FindDMAAddy(HANDLE hProc, uintptr_t baseAddr, std::vector<
 {
 	uintptr_t dynamicMemAAddy{ baseAddr };
 	
-	for (int i{ 0 }; i < offsets.size(); ++i)
+	for (uintptr_t i{ 0 }; i < offsets.size(); ++i)
 	{
-		ReadProcessMemory(hProc, (BYTE*)dynamicMemAAddy, &dynamicMemAAddy, sizeof(dynamicMemAAddy), nullptr);
 		dynamicMemAAddy += offsets[i];
+		ReadProcessMemory(hProc, (BYTE*)dynamicMemAAddy, &dynamicMemAAddy, sizeof(dynamicMemAAddy), nullptr);
 	}
 
 	return dynamicMemAAddy;

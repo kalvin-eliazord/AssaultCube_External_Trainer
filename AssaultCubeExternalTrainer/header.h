@@ -4,5 +4,6 @@
 #include <TlHelp32.h>
 #include <vector>
 #include "MemManager.h"
-#include "Player.h"
+#include "Entity.h"
 #include "Offset.h"
+#include "Hook.h"
