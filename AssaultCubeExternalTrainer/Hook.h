@@ -1,6 +1,8 @@
 #pragma once
 namespace Hook
 {
-	uintptr_t Detour(HANDLE hProc, uintptr_t* src, uintptr_t* dst, const uintptr_t size);
-	void CloseDetour(HANDLE hProc, uintptr_t* src, const uintptr_t size, uintptr_t stolenBytes);
+	bool DetourEx(HANDLE hProc, uintptr_t* src, uintptr_t* dst, const uintptr_t size);
+	void SetGatewayEx(HANDLE hProc, uintptr_t* src, uintptr_t* dst, const uintptr_t size, uintptr_t jmpBackAddr);
+	void NopPatchEx(HANDLE hProc, uintptr_t* src, uintptr_t* dst, const uintptr_t srcSize);
+	void PatchEx(HANDLE hProc, uintptr_t* src, uintptr_t* dst, const uintptr_t size);
 };

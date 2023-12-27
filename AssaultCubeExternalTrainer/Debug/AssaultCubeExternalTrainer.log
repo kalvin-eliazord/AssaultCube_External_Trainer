@@ -1,2 +1,6 @@
-﻿  main.cpp
+﻿  Entity.cpp
+  Hook.cpp
+  MemManager.cpp
+  main.cpp
+  Generating Code...
   AssaultCubeExternalTrainer.vcxproj -> C:\Users\kalvi\source\repos\AssaultCubeExternalTrainer\Debug\AssaultCubeExternalTrainer.exe

@@ -1,16 +1,5 @@
 #include "header.h"
 
-DWORD jmpBackAddr{NULL};
-
-void __declspec(naked) NakedDstFunc()
-{
-    __asm
-    {
-        nop
-        JMP jmpBackAddr
-    }
-}
-
 int main()
 {
     std::cout << "Assault Cube External Trainer by Kalvin \n";
@@ -29,7 +18,11 @@ int main()
 
         if (hProc != INVALID_HANDLE_VALUE)
         {
-            const uintptr_t modBaseAddr{ MemManager::GetModuleBaseAddr(procId, L"ac_client.exe") };
+            const uintptr_t modBaseAddr{
+                MemManager::GetModuleBaseAddr(
+                    procId,
+                    L"ac_client.exe") 
+            };
 
             // setting local player 
             uintptr_t localPlayer{ Entity::GetLocalPlayer(hProc, modBaseAddr)};
@@ -46,31 +39,29 @@ int main()
            // ReadProcessMemory(hProc, (BYTE*)entityListAddr, &entityListAddr, sizeof(entityListAddr), nullptr);
 
             // setting Detour
-            uintptr_t srcAddr{ (modBaseAddr + Offset::decAmmo)};
+            uintptr_t* src{ (uintptr_t*)(modBaseAddr + Offset::decAmmo)};
             constexpr uintptr_t srcSize{ 7 };
-            jmpBackAddr = srcAddr + srcSize;
-            uintptr_t stolenBytes{ NULL };
+            const uintptr_t jmpBackAddr = (uintptr_t)src + srcSize;
+            uintptr_t* stolenBytes{ nullptr };
             bool bDetour{ false };
 
             // alocating memory into targe process
-            uintptr_t* dst{ (uintptr_t*)VirtualAllocEx(
+            uintptr_t* gateway{ (uintptr_t*)VirtualAllocEx(
                 hProc,
                 NULL,
                 MAX_PATH,
                 MEM_COMMIT | MEM_RESERVE,
                 PAGE_EXECUTE_READWRITE) };
 
-            if(dst)
-            {
-                // writting shellcode into code cave
-                WriteProcessMemory(hProc, dst, (uintptr_t*)"\x90\x57\x8B\x7C\x24\x14\xE9", srcSize, nullptr);
-                // jump back address isnt the right one
-                WriteProcessMemory(hProc, (uintptr_t*)((uintptr_t)dst + srcSize), &jmpBackAddr, sizeof(jmpBackAddr), nullptr);
-            }
+            if (gateway)
+                Hook::SetGatewayEx(
+                    hProc,
+                    gateway,
+                    (uintptr_t*)"\x90\x57\x8B\x7C\x24\x14\xE9",
+                    srcSize,
+                    jmpBackAddr);
             else
-            {
                 return -1;
-            }
 
             while (!GetAsyncKeyState(VK_DELETE) & 1)
             {
@@ -79,21 +70,17 @@ int main()
                     bDetour = !bDetour;
 
                     if (bDetour)
-                    {
-                        
-                        stolenBytes = Hook::Detour(
-                            hProc,
-                            (uintptr_t*)srcAddr,
-                            dst,
-                            srcSize);
-                    }
+                       Hook::DetourEx(hProc, src, gateway, srcSize);
                     else
-                    {
-                        Hook::CloseDetour(hProc, (uintptr_t*)srcAddr, srcSize, stolenBytes);
-                    }
+                       Hook::PatchEx(
+                           hProc,
+                           src,
+                           (uintptr_t*)"\xFF\x0E\x57\x8B\x7C\x24\x14",
+                           srcSize);
                 }
                 Sleep(5);
             }
+
         }
         
         CloseHandle(hProc);

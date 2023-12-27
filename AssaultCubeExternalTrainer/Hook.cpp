@@ -1,47 +1,67 @@
 #include "header.h"
 
-uintptr_t Hook::Detour(HANDLE hProc, uintptr_t* src, uintptr_t* dst, const uintptr_t srcSize)
+bool Hook::DetourEx(HANDLE hProc, uintptr_t* src, uintptr_t* dst, const uintptr_t srcSize)
 {
-	uintptr_t stolenBytes{ NULL };
+	if (srcSize < 5) return false;
 
-	if (srcSize < 5) return stolenBytes;
+	// nopping bytes
+	NopPatchEx(hProc, src, dst, srcSize);
 
 	// setting page protection
 	DWORD oldProtect{};
 	VirtualProtectEx(hProc, src, srcSize, PAGE_EXECUTE_READWRITE, &oldProtect);
-	
-	// setting stolen bytes
-	uintptr_t srcCopy{};
-	if (ReadProcessMemory(hProc, src, &srcCopy, sizeof(src), nullptr))
-	{
-		 stolenBytes = srcCopy;
 
-		// writting JMP opcode
-		constexpr BYTE jmpInstruction{ 0xE9 };
-		WriteProcessMemory(hProc, src, &jmpInstruction, sizeof(jmpInstruction), nullptr);
+	// writting JMP opcode
+	constexpr BYTE jmpInstruction{ 0xE9 };
+	WriteProcessMemory(hProc, src, &jmpInstruction, sizeof(jmpInstruction), nullptr);
 
-		// writting relative address
-		const uintptr_t effectiveAddr{ ((uintptr_t)dst - (uintptr_t)src) - 5 };
-		WriteProcessMemory(hProc, (uintptr_t*)((uintptr_t)src+1), &effectiveAddr, sizeof(effectiveAddr), nullptr);
+	// writting relative address
+	const uintptr_t effectiveAddr{ ((uintptr_t)dst - (uintptr_t)src) - 5 };
+	WriteProcessMemory(hProc, (uintptr_t*)((uintptr_t)src + 1), &effectiveAddr, sizeof(effectiveAddr), nullptr);
 
-		VirtualProtectEx(hProc, src, srcSize, oldProtect, &oldProtect);
-	}
+	VirtualProtectEx(hProc, src, srcSize, oldProtect, &oldProtect);
 
-	return stolenBytes;
+	return true;
 }
 
-void Hook::CloseDetour(HANDLE hProc, uintptr_t* src, const uintptr_t srcSize, uintptr_t stolenBytes)
+void Hook::SetGatewayEx(HANDLE hProc, uintptr_t* src, uintptr_t* dst, const uintptr_t size, uintptr_t jmpBackAddr)
 {
-	if(stolenBytes)
-	{
-		// setting page protection
-		DWORD oldProtect{};
-		VirtualProtectEx(hProc, src, srcSize, PAGE_EXECUTE_READWRITE, &oldProtect);
+	// writting shellcode into the injected memory
+	WriteProcessMemory(
+		hProc,
+		src,
+		dst,
+		size,
+		nullptr);
 
-		WriteProcessMemory(hProc, src, &stolenBytes, sizeof(stolenBytes), nullptr);
+	// jump back address isnt the right one
+	WriteProcessMemory(
+		hProc,
+		(uintptr_t*)((uintptr_t)dst + size),
+		&jmpBackAddr,
+		sizeof(jmpBackAddr),
+		nullptr);
+}
 
-		VirtualProtectEx(hProc, src, srcSize, oldProtect, &oldProtect);
+void Hook::NopPatchEx(HANDLE hProc, uintptr_t* src, uintptr_t* dst, const uintptr_t size)
+{
+	uintptr_t* nopArray{ new uintptr_t[size] };
 
-		stolenBytes = NULL;
-	}
+	memset(nopArray, 0x90, size);
+
+	PatchEx(hProc, src, nopArray, size);
+
+	delete[] nopArray;
+}
+
+void Hook::PatchEx(HANDLE hProc, uintptr_t* src, uintptr_t* dst,const uintptr_t size)
+{
+	// setting page protection
+	DWORD oldProtect{};
+	VirtualProtectEx(hProc, src, size, PAGE_EXECUTE_READWRITE, &oldProtect);
+
+	// patching
+	WriteProcessMemory(hProc, src, dst, size, nullptr);
+
+	VirtualProtectEx(hProc, src, size, oldProtect, &oldProtect);
 }
