@@ -1,4 +1,4 @@
-#include "header.h"
+#include "MemManager.h"
 
 DWORD MemManager::GetProcId(const wchar_t* procName)
 {
@@ -25,6 +25,20 @@ DWORD MemManager::GetProcId(const wchar_t* procName)
 	}
 	CloseHandle(hSnap);
 	return procId;
+}
+
+HANDLE MemManager::GetHproc(DWORD procId)
+{
+	if (!procId) return false;
+	HANDLE hProc{ OpenProcess(PROCESS_ALL_ACCESS, NULL, procId) };
+
+	if (hProc == INVALID_HANDLE_VALUE) return false;
+	const uintptr_t modBaseAddr{
+		MemManager::GetModuleBaseAddr(
+			procId,
+			L"ac_client.exe") };
+
+	return hProc;
 }
 
 uintptr_t MemManager::GetModuleBaseAddr(DWORD procId, const wchar_t* modName)

@@ -1,4 +1,4 @@
-#include "header.h"
+#include "Hook.h"
 
 bool Hook::DetourEx(HANDLE hProc, uintptr_t* src, uintptr_t* dst, const uintptr_t srcSize)
 {

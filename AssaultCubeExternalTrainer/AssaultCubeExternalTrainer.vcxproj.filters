@@ -1,10 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
     <Filter Include="MemoryManagement">
       <UniqueIdentifier>{c0328d84-9763-406c-9e44-d2e7da072070}</UniqueIdentifier>
     </Filter>
@@ -17,6 +13,9 @@
     <Filter Include="main">
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Hacking">
+      <UniqueIdentifier>{218b1a0e-5091-4895-bbf7-5765a7d5f2e7}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -32,22 +31,31 @@
     <ClCompile Include="Hook.cpp">
       <Filter>Hook</Filter>
     </ClCompile>
+    <ClCompile Include="Hacking.cpp">
+      <Filter>Hacking</Filter>
+    </ClCompile>
+    <ClCompile Include="LocalPlayer.cpp">
+      <Filter>Entity</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="header.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="MemManager.h">
       <Filter>MemoryManagement</Filter>
     </ClInclude>
     <ClInclude Include="Entity.h">
       <Filter>Entity</Filter>
     </ClInclude>
-    <ClInclude Include="Offset.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Hook.h">
       <Filter>Hook</Filter>
+    </ClInclude>
+    <ClInclude Include="Offset.h">
+      <Filter>Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Hacking.h">
+      <Filter>Hacking</Filter>
+    </ClInclude>
+    <ClInclude Include="LocalPlayer.h">
+      <Filter>Entity</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

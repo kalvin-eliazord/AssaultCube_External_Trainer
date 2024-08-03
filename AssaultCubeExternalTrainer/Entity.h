@@ -1,5 +1,12 @@
 #pragma once
-namespace Entity
+#include <Windows.h>
+#include "Offset.h"
+
+struct Entity
 {
-	uintptr_t GetLocalPlayer(HANDLE hProc, uintptr_t modBaseAddr);
+	// Get coordinates 
+
+	// Get Team
+
+	// Get Health
 };

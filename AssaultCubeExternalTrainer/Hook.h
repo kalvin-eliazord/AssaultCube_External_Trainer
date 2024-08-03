@@ -1,4 +1,6 @@
 #pragma once
+#include <Windows.h>
+
 namespace Hook
 {
 	bool DetourEx(HANDLE hProc, uintptr_t* src, uintptr_t* dst, const uintptr_t size);

@@ -1,0 +1,236 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Corty\\source\\repos\\AssaultCube_External_Trainer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E524851D-D08B-4DDB-8605-9A268A999570}|AssaultCubeExternalTrainer\\AssaultCubeExternalTrainer.vcxproj|C:\\Users\\Corty\\source\\repos\\AssaultCube_External_Trainer\\AssaultCubeExternalTrainer\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E524851D-D08B-4DDB-8605-9A268A999570}|AssaultCubeExternalTrainer\\AssaultCubeExternalTrainer.vcxproj|solutionrelative:AssaultCubeExternalTrainer\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E524851D-D08B-4DDB-8605-9A268A999570}|AssaultCubeExternalTrainer\\AssaultCubeExternalTrainer.vcxproj|C:\\Users\\Corty\\source\\repos\\AssaultCube_External_Trainer\\AssaultCubeExternalTrainer\\Hacking.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E524851D-D08B-4DDB-8605-9A268A999570}|AssaultCubeExternalTrainer\\AssaultCubeExternalTrainer.vcxproj|solutionrelative:AssaultCubeExternalTrainer\\Hacking.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E524851D-D08B-4DDB-8605-9A268A999570}|AssaultCubeExternalTrainer\\AssaultCubeExternalTrainer.vcxproj|C:\\Users\\Corty\\source\\repos\\AssaultCube_External_Trainer\\AssaultCubeExternalTrainer\\Hacking.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E524851D-D08B-4DDB-8605-9A268A999570}|AssaultCubeExternalTrainer\\AssaultCubeExternalTrainer.vcxproj|solutionrelative:AssaultCubeExternalTrainer\\Hacking.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E524851D-D08B-4DDB-8605-9A268A999570}|AssaultCubeExternalTrainer\\AssaultCubeExternalTrainer.vcxproj|C:\\Users\\Corty\\source\\repos\\AssaultCube_External_Trainer\\AssaultCubeExternalTrainer\\MemManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E524851D-D08B-4DDB-8605-9A268A999570}|AssaultCubeExternalTrainer\\AssaultCubeExternalTrainer.vcxproj|solutionrelative:AssaultCubeExternalTrainer\\MemManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E524851D-D08B-4DDB-8605-9A268A999570}|AssaultCubeExternalTrainer\\AssaultCubeExternalTrainer.vcxproj|C:\\Users\\Corty\\source\\repos\\AssaultCube_External_Trainer\\AssaultCubeExternalTrainer\\MemManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E524851D-D08B-4DDB-8605-9A268A999570}|AssaultCubeExternalTrainer\\AssaultCubeExternalTrainer.vcxproj|solutionrelative:AssaultCubeExternalTrainer\\MemManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E524851D-D08B-4DDB-8605-9A268A999570}|AssaultCubeExternalTrainer\\AssaultCubeExternalTrainer.vcxproj|C:\\Users\\Corty\\source\\repos\\AssaultCube_External_Trainer\\AssaultCubeExternalTrainer\\LocalPlayer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E524851D-D08B-4DDB-8605-9A268A999570}|AssaultCubeExternalTrainer\\AssaultCubeExternalTrainer.vcxproj|solutionrelative:AssaultCubeExternalTrainer\\LocalPlayer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E524851D-D08B-4DDB-8605-9A268A999570}|AssaultCubeExternalTrainer\\AssaultCubeExternalTrainer.vcxproj|C:\\Users\\Corty\\source\\repos\\AssaultCube_External_Trainer\\AssaultCubeExternalTrainer\\Offset.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E524851D-D08B-4DDB-8605-9A268A999570}|AssaultCubeExternalTrainer\\AssaultCubeExternalTrainer.vcxproj|solutionrelative:AssaultCubeExternalTrainer\\Offset.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E524851D-D08B-4DDB-8605-9A268A999570}|AssaultCubeExternalTrainer\\AssaultCubeExternalTrainer.vcxproj|C:\\Users\\Corty\\source\\repos\\AssaultCube_External_Trainer\\AssaultCubeExternalTrainer\\LocalPlayer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E524851D-D08B-4DDB-8605-9A268A999570}|AssaultCubeExternalTrainer\\AssaultCubeExternalTrainer.vcxproj|solutionrelative:AssaultCubeExternalTrainer\\LocalPlayer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E524851D-D08B-4DDB-8605-9A268A999570}|AssaultCubeExternalTrainer\\AssaultCubeExternalTrainer.vcxproj|C:\\Users\\Corty\\source\\repos\\AssaultCube_External_Trainer\\AssaultCubeExternalTrainer\\Entity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E524851D-D08B-4DDB-8605-9A268A999570}|AssaultCubeExternalTrainer\\AssaultCubeExternalTrainer.vcxproj|solutionrelative:AssaultCubeExternalTrainer\\Entity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E524851D-D08B-4DDB-8605-9A268A999570}|AssaultCubeExternalTrainer\\AssaultCubeExternalTrainer.vcxproj|C:\\Users\\Corty\\source\\repos\\AssaultCube_External_Trainer\\AssaultCubeExternalTrainer\\Entity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E524851D-D08B-4DDB-8605-9A268A999570}|AssaultCubeExternalTrainer\\AssaultCubeExternalTrainer.vcxproj|solutionrelative:AssaultCubeExternalTrainer\\Entity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E524851D-D08B-4DDB-8605-9A268A999570}|AssaultCubeExternalTrainer\\AssaultCubeExternalTrainer.vcxproj|C:\\Users\\Corty\\source\\repos\\AssaultCube_External_Trainer\\AssaultCubeExternalTrainer\\Hook.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E524851D-D08B-4DDB-8605-9A268A999570}|AssaultCubeExternalTrainer\\AssaultCubeExternalTrainer.vcxproj|solutionrelative:AssaultCubeExternalTrainer\\Hook.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E524851D-D08B-4DDB-8605-9A268A999570}|AssaultCubeExternalTrainer\\AssaultCubeExternalTrainer.vcxproj|C:\\Users\\Corty\\source\\repos\\AssaultCube_External_Trainer\\AssaultCubeExternalTrainer\\Hook.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E524851D-D08B-4DDB-8605-9A268A999570}|AssaultCubeExternalTrainer\\AssaultCubeExternalTrainer.vcxproj|solutionrelative:AssaultCubeExternalTrainer\\Hook.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LocalPlayer.h",
+              "DocumentMoniker": "C:\\Users\\Corty\\source\\repos\\AssaultCube_External_Trainer\\AssaultCubeExternalTrainer\\LocalPlayer.h",
+              "RelativeDocumentMoniker": "AssaultCubeExternalTrainer\\LocalPlayer.h",
+              "ToolTip": "C:\\Users\\Corty\\source\\repos\\AssaultCube_External_Trainer\\AssaultCubeExternalTrainer\\LocalPlayer.h",
+              "RelativeToolTip": "AssaultCubeExternalTrainer\\LocalPlayer.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-08-03T18:13:50.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LocalPlayer.cpp",
+              "DocumentMoniker": "C:\\Users\\Corty\\source\\repos\\AssaultCube_External_Trainer\\AssaultCubeExternalTrainer\\LocalPlayer.cpp",
+              "RelativeDocumentMoniker": "AssaultCubeExternalTrainer\\LocalPlayer.cpp",
+              "ToolTip": "C:\\Users\\Corty\\source\\repos\\AssaultCube_External_Trainer\\AssaultCubeExternalTrainer\\LocalPlayer.cpp",
+              "RelativeToolTip": "AssaultCubeExternalTrainer\\LocalPlayer.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-03T18:13:26.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Hacking.h",
+              "DocumentMoniker": "C:\\Users\\Corty\\source\\repos\\AssaultCube_External_Trainer\\AssaultCubeExternalTrainer\\Hacking.h",
+              "RelativeDocumentMoniker": "AssaultCubeExternalTrainer\\Hacking.h",
+              "ToolTip": "C:\\Users\\Corty\\source\\repos\\AssaultCube_External_Trainer\\AssaultCubeExternalTrainer\\Hacking.h",
+              "RelativeToolTip": "AssaultCubeExternalTrainer\\Hacking.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-08-03T15:49:41.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Hacking.cpp",
+              "DocumentMoniker": "C:\\Users\\Corty\\source\\repos\\AssaultCube_External_Trainer\\AssaultCubeExternalTrainer\\Hacking.cpp",
+              "RelativeDocumentMoniker": "AssaultCubeExternalTrainer\\Hacking.cpp",
+              "ToolTip": "C:\\Users\\Corty\\source\\repos\\AssaultCube_External_Trainer\\AssaultCubeExternalTrainer\\Hacking.cpp",
+              "RelativeToolTip": "AssaultCubeExternalTrainer\\Hacking.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-03T15:49:25.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MemManager.cpp",
+              "DocumentMoniker": "C:\\Users\\Corty\\source\\repos\\AssaultCube_External_Trainer\\AssaultCubeExternalTrainer\\MemManager.cpp",
+              "RelativeDocumentMoniker": "AssaultCubeExternalTrainer\\MemManager.cpp",
+              "ToolTip": "C:\\Users\\Corty\\source\\repos\\AssaultCube_External_Trainer\\AssaultCubeExternalTrainer\\MemManager.cpp",
+              "RelativeToolTip": "AssaultCubeExternalTrainer\\MemManager.cpp",
+              "ViewState": "AQIAABsAAAAAAAAAAAAqwCgAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-03T15:48:20.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\Corty\\source\\repos\\AssaultCube_External_Trainer\\AssaultCubeExternalTrainer\\main.cpp",
+              "RelativeDocumentMoniker": "AssaultCubeExternalTrainer\\main.cpp",
+              "ToolTip": "C:\\Users\\Corty\\source\\repos\\AssaultCube_External_Trainer\\AssaultCubeExternalTrainer\\main.cpp",
+              "RelativeToolTip": "AssaultCubeExternalTrainer\\main.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-02T09:02:31.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Hook.cpp",
+              "DocumentMoniker": "C:\\Users\\Corty\\source\\repos\\AssaultCube_External_Trainer\\AssaultCubeExternalTrainer\\Hook.cpp",
+              "RelativeDocumentMoniker": "AssaultCubeExternalTrainer\\Hook.cpp",
+              "ToolTip": "C:\\Users\\Corty\\source\\repos\\AssaultCube_External_Trainer\\AssaultCubeExternalTrainer\\Hook.cpp",
+              "RelativeToolTip": "AssaultCubeExternalTrainer\\Hook.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-02T09:02:31.972Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Hook.h",
+              "DocumentMoniker": "C:\\Users\\Corty\\source\\repos\\AssaultCube_External_Trainer\\AssaultCubeExternalTrainer\\Hook.h",
+              "RelativeDocumentMoniker": "AssaultCubeExternalTrainer\\Hook.h",
+              "ToolTip": "C:\\Users\\Corty\\source\\repos\\AssaultCube_External_Trainer\\AssaultCubeExternalTrainer\\Hook.h",
+              "RelativeToolTip": "AssaultCubeExternalTrainer\\Hook.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-08-02T09:02:31.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Offset.h",
+              "DocumentMoniker": "C:\\Users\\Corty\\source\\repos\\AssaultCube_External_Trainer\\AssaultCubeExternalTrainer\\Offset.h",
+              "RelativeDocumentMoniker": "AssaultCubeExternalTrainer\\Offset.h",
+              "ToolTip": "C:\\Users\\Corty\\source\\repos\\AssaultCube_External_Trainer\\AssaultCubeExternalTrainer\\Offset.h",
+              "RelativeToolTip": "AssaultCubeExternalTrainer\\Offset.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-08-02T09:02:31.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MemManager.h",
+              "DocumentMoniker": "C:\\Users\\Corty\\source\\repos\\AssaultCube_External_Trainer\\AssaultCubeExternalTrainer\\MemManager.h",
+              "RelativeDocumentMoniker": "AssaultCubeExternalTrainer\\MemManager.h",
+              "ToolTip": "C:\\Users\\Corty\\source\\repos\\AssaultCube_External_Trainer\\AssaultCubeExternalTrainer\\MemManager.h",
+              "RelativeToolTip": "AssaultCubeExternalTrainer\\MemManager.h",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAqwAkAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-08-02T09:02:31.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Entity.cpp",
+              "DocumentMoniker": "C:\\Users\\Corty\\source\\repos\\AssaultCube_External_Trainer\\AssaultCubeExternalTrainer\\Entity.cpp",
+              "RelativeDocumentMoniker": "AssaultCubeExternalTrainer\\Entity.cpp",
+              "ToolTip": "C:\\Users\\Corty\\source\\repos\\AssaultCube_External_Trainer\\AssaultCubeExternalTrainer\\Entity.cpp",
+              "RelativeToolTip": "AssaultCubeExternalTrainer\\Entity.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-02T09:02:31.977Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Entity.h",
+              "DocumentMoniker": "C:\\Users\\Corty\\source\\repos\\AssaultCube_External_Trainer\\AssaultCubeExternalTrainer\\Entity.h",
+              "RelativeDocumentMoniker": "AssaultCubeExternalTrainer\\Entity.h",
+              "ToolTip": "C:\\Users\\Corty\\source\\repos\\AssaultCube_External_Trainer\\AssaultCubeExternalTrainer\\Entity.h",
+              "RelativeToolTip": "AssaultCubeExternalTrainer\\Entity.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-08-02T09:02:31.979Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

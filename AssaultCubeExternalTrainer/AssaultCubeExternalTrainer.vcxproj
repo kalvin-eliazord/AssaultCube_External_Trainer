@@ -129,14 +129,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Hacking.cpp" />
     <ClCompile Include="Hook.cpp" />
+    <ClCompile Include="LocalPlayer.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MemManager.cpp" />
     <ClCompile Include="Entity.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="header.h" />
+    <ClInclude Include="Hacking.h" />
     <ClInclude Include="Hook.h" />
+    <ClInclude Include="LocalPlayer.h" />
     <ClInclude Include="MemManager.h" />
     <ClInclude Include="Offset.h" />
     <ClInclude Include="Entity.h" />
