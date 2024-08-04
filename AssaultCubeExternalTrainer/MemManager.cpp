@@ -68,7 +68,7 @@ uintptr_t MemManager::GetModuleBaseAddr(DWORD procId, const wchar_t* modName)
 	return modBaseAddr;
 }
 
-uintptr_t MemManager::FindDMAAddy(HANDLE hProc, uintptr_t baseAddr, std::vector<uintptr_t> offsets)
+uintptr_t MemManager::ReadMem(HANDLE hProc, uintptr_t baseAddr, std::vector<uintptr_t> offsets)
 {
 	uintptr_t dynamicMemAAddy{ baseAddr };
 	

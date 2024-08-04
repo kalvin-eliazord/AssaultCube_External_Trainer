@@ -3,10 +3,9 @@
     bool Hacking::StartHook(HANDLE hProc, intptr_t modBaseAddr)
     {
         // setting Detour
-        uintptr_t* src{ (uintptr_t*)(modBaseAddr + Offset::decAmmoInstruct) };
+        uintptr_t* srcAddr{ (uintptr_t*)(modBaseAddr + Offset::decAmmoInstruct) };
         constexpr uintptr_t srcSize{ 7 };
-        const uintptr_t jmpBackAddr = (uintptr_t)src + srcSize;
-        uintptr_t* stolenBytes{ nullptr };
+        const uintptr_t jmpBackAddr = (uintptr_t)srcAddr + srcSize;
         bool bDetour{ false };
 
         // alocating memory into targe process
@@ -28,20 +27,20 @@
         while (!GetAsyncKeyState(VK_DELETE) & 1)
         {
             if (GetAsyncKeyState(VK_F1) & 1)
-            {
                 bDetour = !bDetour;
 
                 if (bDetour)
-                    Hook::DetourEx(hProc, src, gateway, srcSize);
+                    Hook::DetourEx(hProc, srcAddr, gateway, srcSize);
                 else
                     Hook::PatchEx(
                         hProc,
-                        src,
+                        srcAddr,
                         (uintptr_t*)"\xFF\x0E\x57\x8B\x7C\x24\x14",
                         srcSize);
-            }
+
             Sleep(5);
         }
+
         CloseHandle(hProc);
         return true;
     }
